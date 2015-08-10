@@ -3,12 +3,12 @@ This scaffold is intended to bring an clean cut to working with gulp. The concep
 
 The job is clear; When you're setting up your project, the configuration file is where you edit and setup your project for use with gulp.
 
-## Installment
+## Installation 
 If you just have cloned the repository down to your project, all you need to do is install the devDependencies gulp requires.
 
 Type: **npm install** in your terminal.
 
-## After installment
+## After installation
 When you have installed all the dependencies you're almost done. All you have to do is setup settings for each module in config.json.
 As per default config.json comes with some basic settings you can use. Its best that you alter path options for each subrutine to match your current project to make sure gulp performs as intended.
 
