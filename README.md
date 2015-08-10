@@ -6,7 +6,7 @@ The job is clear; When you're setting up your project, the configuration file is
 ## Installment
 If you just have cloned the repository down to your project, all you need to do is install the devDependencies gulp requires.
 
-Type: npm install in your terminal.
+Type: **npm install** in your terminal.
 
 ## After installment
 When you have installed all the dependencies you're almost done. All you have to do is setup settings for each module in config.json.
@@ -25,9 +25,9 @@ The "mod" section contains options for a module. Each module is listed further d
 Some of the modules contains an option called: "enabled". The "enabled" options tells gulp to use the module and take actions accordingly. Please note that not all modules contains such an option and therefore only the ones with "enabled" found in config can use it.
 
 ## Development tasks
-[ ] Make it possbile to support less/sass in a project instead of just sass
-[ ] Check if all modules have added default options in config
-[ ] Test of implementation
-[ ] Test use of module options for each task
-[ ] Validate error handler acts correctly to prevent "hanging" in watch events
-[ ] Optimize default task dependencies
+- [ ] Make it possbile to support less/sass in a project instead of just sass
+- [ ] Check if all modules have added default options in config
+- [ ] Test of implementation
+- [ ] Test use of module options for each task
+- [ ] Validate error handler acts correctly to prevent "hanging" in watch events
+- [ ] Optimize default task dependencies
