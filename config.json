@@ -4,8 +4,12 @@
       "autoprefixer": {
           "browsers": ["last 2 versions"]
       },
-      "jshint": {},
-      "eslint": {},
+      "jshint": {
+        "enabled": false
+      },
+      "eslint": {
+        "enabled": false
+      },
       "browsersync": {},
       "sourcemaps": true, 
       "base64": {
