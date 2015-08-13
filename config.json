@@ -1,44 +1,46 @@
 {
-    "environment": "dev",
-    "mod": {
-        "autoprefixer": {
-            "browsers": ["last 2 versions"]
-        },
-        "browsersync": {},
-        "sourcemaps": true, 
-        "base64": {
-          "enabled": true,
-          "opt": {}
-        },
-        "sass": {
-          "opt": {}
-        },
-        "imagemin": {
-          "opt": {
-            "progressive": true,
-            "interlaced": true,
-            "svgPlugins": [{
-              "removeViewBox":false
-            },{
-              "removeUselessStrokeAndFill": false
-            }]
-          }
+  "environment": "dev",
+  "mod": {
+      "autoprefixer": {
+          "browsers": ["last 2 versions"]
+      },
+      "jshint": {},
+      "eslint": {},
+      "browsersync": {},
+      "sourcemaps": true, 
+      "base64": {
+        "enabled": true,
+        "opt": {}
+      },
+      "sass": {
+        "opt": {}
+      },
+      "imagemin": {
+        "opt": {
+          "progressive": true,
+          "interlaced": true,
+          "svgPlugins": [{
+            "removeViewBox":false
+          },{
+            "removeUselessStrokeAndFill": false
+          }]
         }
-    },
-    "path": {
-        "sass": {
-          "source": "./stylesheet/source/style.scss",
-          "target": "./stylesheet/build",
-          "watch": ["./stylesheet/source/*.scss","./stylesheet/source/**/*.scss"]
-        },
-        "js": {
-          "source": ["./js/source/*.js","./js/source/**/*.js"],
-          "target": "./js/",
-          "watch": ["./js/source/*.js","./js/source/**/*.js"]
-        },
-        "images": {
-          "source": ["./static/images/*.{gif,jpg,png}", "./static/images/**/*.{gif,jpg,png}"],
-          "target: ""  
-        }
-    }
+      }
+  },
+  "path": {
+      "sass": {
+        "source": "./stylesheet/source/style.scss",
+        "target": "./stylesheet/build",
+        "watch": ["./stylesheet/source/*.scss","./stylesheet/source/**/*.scss"]
+      },
+      "js": {
+        "source": ["./js/source/*.js","./js/source/**/*.js"],
+        "target": "./js/",
+        "watch": ["./js/source/*.js","./js/source/**/*.js"]
+      },
+      "images": {
+        "source": ["./static/images/*.{gif,jpg,png}", "./static/images/**/*.{gif,jpg,png}"],
+        "target": ""  
+      }
+  }
 }
