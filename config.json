@@ -5,16 +5,20 @@
           "browsers": ["last 2 versions"]
       },
       "jshint": {
-        "enabled": false
+        "enabled": true
       },
       "eslint": {
-        "enabled": false
+        "enabled": true
       },
       "browsersync": {},
-      "sourcemaps": true, 
+      "sourcemaps": false, 
       "base64": {
-        "enabled": true,
-        "opt": {}
+        "enabled": false,
+        "opt": {
+            "baseDir": "/images",
+            "maxImageSize": 8192,
+            "debug": true
+        }
       },
       "sass": {
         "opt": {}
@@ -29,6 +33,11 @@
             "removeUselessStrokeAndFill": false
           }]
         }
+      },
+      "notify": {
+        "title": "Dwarf Labs",
+        "subtitle": "Project Gulp",
+        "icon": ""
       }
   },
   "path": {
@@ -38,13 +47,13 @@
         "watch": ["./stylesheet/source/*.scss","./stylesheet/source/**/*.scss"]
       },
       "js": {
-        "source": ["./js/source/*.js","./js/source/**/*.js"],
-        "target": "./js/",
-        "watch": ["./js/source/*.js","./js/source/**/*.js"]
+        "source": ["./scripts/source/vendor/*.js", "./scripts/source/site/*.js"],
+        "target": "./scripts/build",
+        "watch": ["./scripts/source/**/*.js"]
       },
       "images": {
-        "source": ["./static/images/*.{gif,jpg,png}", "./static/images/**/*.{gif,jpg,png}"],
-        "target": ""  
+        "source": ["./images/*.{gif,jpg,png}", "./images/**/*.{gif,jpg,png}"],
+        "target": "./images/optimized"  
       }
   }
 }
