@@ -18,16 +18,18 @@ The "mod" section contains options for a module. Each module is listed further d
 * gulp-imagemin: 
 * gulp-sourcemaps: https://www.npmjs.com/package/gulp-sourcemaps
 * gulp-uglify: https://www.npmjs.com/package/gulp-uglify
-
-// TODO: Add the rest of api's to the list
+* gulp-notify: 
+* gulp-autoprefixer: 
+* gulp-base64
 
 ## Custom module options
 Some of the modules contains an option called: "enabled". The "enabled" options tells gulp to use the module and take actions accordingly. Please note that not all modules contains such an option and therefore only the ones with "enabled" found in config can use it.
 
 ## Development tasks
 - [ ] Make it possbile to support less/sass in a project instead of just sass
-- [ ] Check if all modules have added default options in config
+- [x] Check if all modules have added default options in config
 - [ ] Test of implementation
 - [ ] Test use of module options for each task
-- [ ] Validate error handler acts correctly to prevent "hanging" in watch events
+- [x] Validate error handler acts correctly to prevent "hanging" in watch events
 - [ ] Optimize default task dependencies
+- [ ] Find better alternative for handling "vendor/site" specific js in case of use of eslint/jshint
